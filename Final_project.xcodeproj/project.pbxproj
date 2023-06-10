@@ -19,6 +19,7 @@
 		5E928E572A211620009F375F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5E928E562A211620009F375F /* FirebaseStorage */; };
 		5E928E5D2A224E1E009F375F /* Hall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E928E5C2A224E1E009F375F /* Hall.swift */; };
 		5E928E612A22624E009F375F /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E928E602A22624E009F375F /* GameObject.swift */; };
+		5EA274692A34BBF500FAF631 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA274682A34BBF500FAF631 /* Rule.swift */; };
 		5EC860F22A3301990011CDBB /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC860F12A3301990011CDBB /* Set.swift */; };
 		5EC860F42A33313D0011CDBB /* FullScreenView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC860F32A33313D0011CDBB /* FullScreenView2.swift */; };
 		5EC860F62A3363ED0011CDBB /* ResultRow2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC860F52A3363ED0011CDBB /* ResultRow2.swift */; };
@@ -69,6 +70,7 @@
 		5E928E4F2A210A48009F375F /* BuildRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildRoom.swift; sourceTree = "<group>"; };
 		5E928E5C2A224E1E009F375F /* Hall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hall.swift; sourceTree = "<group>"; };
 		5E928E602A22624E009F375F /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		5EA274682A34BBF500FAF631 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
 		5EC860F12A3301990011CDBB /* Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 		5EC860F32A33313D0011CDBB /* FullScreenView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenView2.swift; sourceTree = "<group>"; };
 		5EC860F52A3363ED0011CDBB /* ResultRow2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRow2.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				5E928E492A2097FB009F375F /* RoomMem.swift */,
 				5EE2DACF2A2669B500D41F97 /* GameView.swift */,
 				5EE2DACB2A265FAF00D41F97 /* Game2.swift */,
+				5EA274682A34BBF500FAF631 /* Rule.swift */,
 				5EE2DACD2A2669AB00D41F97 /* PlayerCardsView.swift */,
 				5E10D0FA2A30C57D00AEC810 /* PlayerCardsView2.swift */,
 				5ED5886E2A25DA8300A23A20 /* FullScreenView.swift */,
@@ -380,6 +383,7 @@
 				5EC860F62A3363ED0011CDBB /* ResultRow2.swift in Sources */,
 				5E928E5D2A224E1E009F375F /* Hall.swift in Sources */,
 				5ED588712A25DA8800A23A20 /* DealAnimationView.swift in Sources */,
+				5EA274692A34BBF500FAF631 /* Rule.swift in Sources */,
 				5EE2DAD02A2669B500D41F97 /* GameView.swift in Sources */,
 				5E928E402A20876A009F375F /* Log.swift in Sources */,
 				5EE2DACC2A265FAF00D41F97 /* Game2.swift in Sources */,

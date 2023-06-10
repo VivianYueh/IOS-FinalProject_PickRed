@@ -10,7 +10,8 @@ import AVFoundation
 struct GameView: View {
     @EnvironmentObject var gameObject: GameObject
     @State private var isRotated = false
-    @State var set=true
+    @State var set=false
+    @State var rule=false
     func cleanShowCard(){
         for cardIndex in 0...51{
             gameObject.showCard[cardIndex] = true
@@ -41,40 +42,52 @@ struct GameView: View {
                         gameObject.gameOver = false
                         
                     }
+                Image(systemName: "questionmark")
+                    .foregroundColor(.gray)
+                    .onTapGesture {
+                        rule=true
+                        
+                    }
+                    .sheet(isPresented: $rule, content: {
+                        Rule(rule: $rule)
+                    })
                 
                 
             }
             .offset(x:250,y:-140)
             VStack{
-                PlayerCardsView( cards: gameObject.players[2].cards, playerNum: 1, direction: 1)
-                .offset(y: 10)
-                Spacer()
-                
-                HStack{
-                    PlayerCardsView( cards: gameObject.players[1].cards, playerNum: 1, direction: 0)
-                        .offset(x: 50)
+                if(set==false&&rule==false){
+                    PlayerCardsView( cards: gameObject.players[2].cards, playerNum: 1, direction: 1)
+                    .offset(y: 10)
                     Spacer()
                     
-                    VStack{
-                        Text("剩下：\(52 - gameObject.topCardIndex - 1)張")
-                        /*
-                         Image("cardback")
-                         .resizable()
-                         .frame(width: 50, height: 75)
-                         .rotationEffect(Angle.degrees(isRotated ? 90 : 0))
-                         .animation(.easeIn)
-                         */
-                        PlayerCardsView( cards: gameObject.tableCards, playerNum: 5, direction: 1)
+                    HStack{
+                        PlayerCardsView( cards: gameObject.players[1].cards, playerNum: 1, direction: 0)
+                            .offset(x: 50)
+                        Spacer()
+                        
+                        VStack{
+                            Text("剩下：\(52 - gameObject.topCardIndex - 1)張")
+                            /*
+                             Image("cardback")
+                             .resizable()
+                             .frame(width: 50, height: 75)
+                             .rotationEffect(Angle.degrees(isRotated ? 90 : 0))
+                             .animation(.easeIn)
+                             */
+                            PlayerCardsView( cards: gameObject.tableCards, playerNum: 5, direction: 1)
+                        }
+                        //.offset(y: -50)
+                        
+                        Spacer()
+                        PlayerCardsView( cards: gameObject.players[3].cards, playerNum: 1, direction: 0)
+                            .offset(x: -50)
                     }
-                    //.offset(y: -50)
-                    
                     Spacer()
-                    PlayerCardsView( cards: gameObject.players[3].cards, playerNum: 1, direction: 0)
-                        .offset(x: -50)
+                    PlayerCardsView( cards: gameObject.players[0].cards, playerNum: 0, direction: 1)
+                        .offset(y: -10)
                 }
-                Spacer()
-                PlayerCardsView( cards: gameObject.players[0].cards, playerNum: 0, direction: 1)
-                    .offset(y: -10)
+                
             }
             .ignoresSafeArea()
             .onAppear{

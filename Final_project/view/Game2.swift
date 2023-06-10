@@ -40,6 +40,7 @@ struct Game2: View {
     @State var win = false
     @State var isPresented = false
     @State private var isRotated = false
+    @State var rule = false
     @Binding var start:Bool
     @Binding var room:String
     @Binding var idx:Int
@@ -149,13 +150,22 @@ struct Game2: View {
                         gameObject.start=false
                         
                     }
+                Image(systemName: "questionmark")
+                    .foregroundColor(.gray)
+                    .onTapGesture {
+                        rule=true
+                        
+                    }
+                    .sheet(isPresented: $rule, content: {
+                        Rule(rule: $rule)
+                    })
                 
                 
             }
             .offset(x:250,y:-140)
             
             VStack{
-                if(set==false){
+                if(set==false&&rule==false){
                     PlayerCardsView2( cards: $p3card, tcards: $tacard, cardDeck: $cardDeck, idx:$idx, topIdx: $top, playerNum: 1, direction: 1, room: room)
                     .offset(y: 10)
                     Spacer()

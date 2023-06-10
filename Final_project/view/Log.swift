@@ -41,6 +41,9 @@ struct Log: View {
                     
                 }
             }
+        Button("返回"){
+            log = false
+        }
     }
 }
 
