@@ -13,12 +13,15 @@ struct Reg: View {
     var body: some View {
         TextField("帳號", text: $user_acc)
             .keyboardType(.numberPad)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
             .padding()
         TextField("密碼", text: $user_pas)
             .keyboardType(.numberPad)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
             .padding()
         TextField("名字", text: $user_nam)
             .keyboardType(.numberPad)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
             .padding()
         HStack{
             Button("註冊"){

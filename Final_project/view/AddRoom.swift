@@ -19,6 +19,7 @@ struct AddRoom: View {
     var body: some View {
         TextField("房間號", text: $user_rom)
             .keyboardType(.numberPad)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
             .padding()
         Text("加入房間")
             .foregroundColor(.blue)

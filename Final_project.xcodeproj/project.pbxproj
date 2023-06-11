@@ -25,6 +25,8 @@
 		5EC860F62A3363ED0011CDBB /* ResultRow2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC860F52A3363ED0011CDBB /* ResultRow2.swift */; };
 		5ED5886F2A25DA8300A23A20 /* FullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED5886E2A25DA8300A23A20 /* FullScreenView.swift */; };
 		5ED588712A25DA8800A23A20 /* DealAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED588702A25DA8800A23A20 /* DealAnimationView.swift */; };
+		5EDC6E4E2A3646E000D9BB5A /* Forget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC6E4D2A3646E000D9BB5A /* Forget.swift */; };
+		5EDC6E502A36486F00D9BB5A /* LogFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC6E4F2A36486F00D9BB5A /* LogFunc.swift */; };
 		5EE2DACC2A265FAF00D41F97 /* Game2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE2DACB2A265FAF00D41F97 /* Game2.swift */; };
 		5EE2DACE2A2669AB00D41F97 /* PlayerCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE2DACD2A2669AB00D41F97 /* PlayerCardsView.swift */; };
 		5EE2DAD02A2669B500D41F97 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE2DACF2A2669B500D41F97 /* GameView.swift */; };
@@ -76,6 +78,8 @@
 		5EC860F52A3363ED0011CDBB /* ResultRow2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRow2.swift; sourceTree = "<group>"; };
 		5ED5886E2A25DA8300A23A20 /* FullScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenView.swift; sourceTree = "<group>"; };
 		5ED588702A25DA8800A23A20 /* DealAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealAnimationView.swift; sourceTree = "<group>"; };
+		5EDC6E4D2A3646E000D9BB5A /* Forget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forget.swift; sourceTree = "<group>"; };
+		5EDC6E4F2A36486F00D9BB5A /* LogFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFunc.swift; sourceTree = "<group>"; };
 		5EE2DACB2A265FAF00D41F97 /* Game2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game2.swift; sourceTree = "<group>"; };
 		5EE2DACD2A2669AB00D41F97 /* PlayerCardsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCardsView.swift; sourceTree = "<group>"; };
 		5EE2DACF2A2669B500D41F97 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -130,7 +134,6 @@
 			children = (
 				5EFC14D62A04FF5000B1E884 /* user.swift */,
 				5E928E4B2A20D06B009F375F /* Player.swift */,
-				5E928E602A22624E009F375F /* GameObject.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -139,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				5EFC504A2A08074200BC2859 /* RoomFunction.swift */,
+				5E928E602A22624E009F375F /* GameObject.swift */,
+				5EDC6E4F2A36486F00D9BB5A /* LogFunc.swift */,
 			);
 			path = "view-model";
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 				5E928E4F2A210A48009F375F /* BuildRoom.swift */,
 				5E928E3D2A20873E009F375F /* Reg.swift */,
 				5E928E3F2A20876A009F375F /* Log.swift */,
+				5EDC6E4D2A3646E000D9BB5A /* Forget.swift */,
 				5E928E492A2097FB009F375F /* RoomMem.swift */,
 				5EE2DACF2A2669B500D41F97 /* GameView.swift */,
 				5EE2DACB2A265FAF00D41F97 /* Game2.swift */,
@@ -383,6 +389,7 @@
 				5EC860F62A3363ED0011CDBB /* ResultRow2.swift in Sources */,
 				5E928E5D2A224E1E009F375F /* Hall.swift in Sources */,
 				5ED588712A25DA8800A23A20 /* DealAnimationView.swift in Sources */,
+				5EDC6E502A36486F00D9BB5A /* LogFunc.swift in Sources */,
 				5EA274692A34BBF500FAF631 /* Rule.swift in Sources */,
 				5EE2DAD02A2669B500D41F97 /* GameView.swift in Sources */,
 				5E928E402A20876A009F375F /* Log.swift in Sources */,
@@ -400,6 +407,7 @@
 				5E10D0FB2A30C57D00AEC810 /* PlayerCardsView2.swift in Sources */,
 				5EC860F42A33313D0011CDBB /* FullScreenView2.swift in Sources */,
 				5E928E4C2A20D06B009F375F /* Player.swift in Sources */,
+				5EDC6E4E2A3646E000D9BB5A /* Forget.swift in Sources */,
 				5EE2DAD22A266EA300D41F97 /* ResultRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
