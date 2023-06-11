@@ -22,20 +22,16 @@ struct Forget: View {
         Button("送出"){
             logFunc.checkAccount(email: email)
         }
-        .alert(isPresented: $logFunc.showalert) {
-                        Alert(
-                            title: Text("確認帳號"),
-                            message: Text("此帳號存在"),
-                            dismissButton: .default(Text("確定"))
-                        )
-                    }
+      
         .alert(isPresented: $logFunc.sendPas) {
                         Alert(
                             title: Text("重設密碼"),
-                            message: Text("重設密碼連結已經寄送至您的信箱"),
+                            message: Text(logFunc.senMes),
                             dismissButton: .default(Text("確定"),action: {forget=false})
                         )
                     }
+       
+        
         
     }
 }
